@@ -1,0 +1,403 @@
+.website{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        width: 100%;
+        min-height: 100vh;
+
+     background: #FFFFFF;
+}
+.UI-header{
+    width: 100%;
+        display: flex;
+        overflow: hidden;
+        position: relative;
+        align-items: flex-start;
+        border-color: transparent;
+        margin-bottom: 0px;
+}
+.topigation {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    padding-top: 12px;
+    position: absolute;
+    align-items: center;
+    flex-shrink: 0;
+    border-color: transparent;
+    justify-content: space-around;
+}
+.items {
+    display: flex;
+    position: relative;
+    align-items: center;
+    border-color: transparent;
+    justify-content: center;
+}
+.button{
+    display: flex;
+        position: relative;
+        align-items: center;
+        border-color: transparent;
+        justify-content: center;
+        gap: 16px;
+}
+.logo {
+    display: flex;
+    position: relative;
+    align-items: center;
+    border-color: transparent;
+    margin-right: 24px;
+    border-radius: 12px;
+    justify-content: center;
+}
+.logotext {
+    color: #061C3D;
+    height: auto;
+    font-size: 36px;
+    align-self: auto;
+    font-style: Medium;
+    text-align: left;
+    font-family: Lexend,sans-serif;
+    font-weight: 500;
+    line-height: 44px;
+    font-stretch: normal;
+    margin-right: 0;
+    margin-bottom: 0;
+    text-decoration: none;
+}
+.icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    align-items: flex-start;
+    flex-shrink: 0;
+    border-color: transparent;
+    margin-right: 10px;
+}
+.top-item {
+    display: flex;
+    padding: 32px 0;
+    position: relative;
+    align-items: center;
+    border-color: transparent;
+    margin-right: 24px;
+    justify-content: center;;
+}
+.top-text{
+    color: #838E9E;
+}
+.top-text:hover {
+    color: #0B63E5;
+    height: auto;
+    font-size: 14px;
+    align-self: auto;
+    font-style: Regular;
+    text-align: left;
+    font-family: Lexend,sans-serif;
+    font-weight: 400;
+    line-height: 20px;
+    font-stretch: normal;
+    margin-right: 0;
+    margin-bottom: 0;
+    text-decoration: none;
+    
+}
+.contact-button{
+    display: flex;
+    padding: 0 20px;
+    position: relative;
+    align-items: center;
+    border-color: transparent;
+    width: 95px;
+    height: 44px;
+    gap: 8px;
+    border-radius: 5px;
+    justify-content: center;
+    background-color:#F0F5FF;
+}
+.request-button {
+    display: flex;
+    padding: 0 20px;
+    position: relative;
+    align-items: center;
+    border-color: transparent;
+    border-radius: 5px;
+    justify-content: center;
+    background-color:#0B63E5;
+    width: 156px;
+    height: 44px;
+}
+.preview-button {
+    display: flex;
+    padding: 0 20px;
+    position: relative;
+    align-items: center;
+    border-color: transparent;
+    border-radius: 5px;
+    justify-content: center;
+    background-color: #F0F5FF;
+    width: 156px;
+    height: 44px;
+}
+.contact{
+    color: #0B63E5;
+    height: auto;
+    align-self: auto;
+    text-align: left;
+    line-height: 44px;
+    margin-right: 0;
+    margin-bottom: 0;
+}
+.request{
+    color: #ffff;
+    height: auto;
+    align-self: auto;
+    text-align: left;
+    line-height: 44px;
+    margin-right: 0;
+    margin-bottom: 0;
+}
+.topi-line{
+    width: 32px;
+    height: 0px;
+    border: 1px solid #E6E8EC;
+    transform: rotate(90deg);
+    flex: none;
+    flex-grow: 0;
+}
+.information{
+    top: 310px;
+    left: 300px;
+    width: 759px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    border-color: transparent;
+    flex-direction: column;
+}
+.infotext1 {
+    color: #061C3D;
+    font-family: 'Lexend',sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 72px;
+    line-height: 80px;
+    letter-spacing: -0.018em;
+    width: 759px;
+    height: 160px;
+    align-self: auto;
+    text-align: left;
+    line-height: 80px;
+    margin-right: 0;
+    margin-bottom: 32px;
+    
+}
+.infotext2 {
+    width: 648px;
+    height: auto;
+    align-self: auto;
+    text-align: left;
+    line-height: 28px;
+    margin-right: 0;
+    margin-bottom: 32px;
+    font-family: 'Lexend',sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 28px;
+    color: #061C3D;
+}
+.frame1 {
+    display: flex;
+    position: relative;
+    align-items: flex-start;
+    border-color: transparent;
+    margin-bottom: 32px;
+    flex-direction: column;
+}
+.frame2 {
+    display: flex;
+    position: relative;
+    align-items: center;
+    border-color: transparent;
+    margin-bottom: 32px;
+    flex-direction: row;
+    gap: 16px;
+}
+.row {
+    display: flex;
+    position: relative;
+    align-items: flex-start;
+    border-color: transparent;
+    margin-bottom: 16px;
+}
+.rowtext{
+    width: 280px;
+    height: 24px;
+    font-family: 'Lexend',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #0F9918;
+}
+.check {
+    position: relative;
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+}
+
+.check::before {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    height: 50%;
+    width: 2px;
+    background-color: #0F9918;
+    content: "";
+    transform: translateX(10px) rotate(-45deg);
+    transform-origin: left bottom;
+}
+
+.check::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #0F9918;
+    content: "";
+    transform: translateX(10px) rotate(-45deg);
+    transform-origin: left bottom;
+}
+.rowfeature{
+    display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 8px;
+    
+        width: 312px;
+        height: 24px;
+}
+.info-image {
+    position: absolute;
+    width: 1060px;
+    height: 980px;
+    left: 860px;
+    top: 100px;
+}
+.yellowarrow{
+    position: absolute;
+        width: 199.96px;
+        height: 150px;
+        left: 93.04px;
+        top: 775.5px;
+}
+.tooltip{
+    display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;
+        position: absolute;
+        width: 199px;
+        height: 36px;
+        left: 167px;
+        top: 932px;
+    
+        transform: rotate(15deg);
+}
+.tooltip-box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 6px 12px;
+        width: 192px;
+        background: #FFC759;
+        border-radius: 3px;
+        position: relative;
+        border-color: transparent;
+}
+.tooltip-text{
+        width: 168px;
+        height: 24px;
+        font-family: 'Lexend',sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #061C3D;    
+}
+.chevron{
+    width: 12px;
+    height: 7px;
+    background: #FFC759;
+    transform: rotate(325deg);
+}
+.check0{
+    letter-spacing: 20px;
+}
+
+.UI-features{
+    display: flex;
+    padding: 0 300px 124px 300px;
+    overflow: hidden;
+    position: relative;
+    align-items: flex-start;
+    border-color: transparent;
+    margin-bottom: 0px;
+    flex-direction: column;
+    background-color: var(--dl-color-gray-00);
+}
+
+.Heading01{
+        /* Beautiful UI kit designed to grow your business. */
+        
+        
+            width: 616px;
+            height: 180px;
+        
+            /* Heading/01 */
+        
+            font-family: 'Lexend';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 56px;
+            line-height: 60px;
+            /* or 107% */
+        
+            display: flex;
+            align-items: center;
+            letter-spacing: -0.015em;
+        
+            /* Gray/900 */
+        
+            color: #061C3D;
+}
+.Heading02{
+    /* Bootstrap code with a well-organized Figma file to design & develop your next websites in minutes. */
+    
+    
+        width: 312px;
+        height: 112px;
+    
+        /* Body/Xtra Large/300 */
+    
+        font-family: 'Lexend';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 28px;
+        /* or 140% */
+    
+    
+        /* Gray/900 */
+    
+        color: #061C3D;
+}

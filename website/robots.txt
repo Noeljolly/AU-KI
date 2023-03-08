@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /chevron.svg
+Allow: /goliologo.png
+Allow: /index.html
+Allow: /main.css
+Allow: /man.png
+Allow: /topiline.svg
+Allow: /Other 08 1.png
+Allow: /robots.txt
+Allow: /style.css
+Allow: /yellowarrow.svg
