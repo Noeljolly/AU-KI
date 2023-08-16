@@ -255,6 +255,12 @@ body{
     border-radius: 5px;
     outline: none;
     padding-left: 10px;
+    color: var(--700, #4A5568);
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
   }
   
   .expiration-date-cvv {
@@ -522,8 +528,12 @@ body{
    width: 100%;
    background-color: #fff;
    height: 30px;
-   text-align:center;
    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
  }
 
   @media only screen and (max-width: 600px){
