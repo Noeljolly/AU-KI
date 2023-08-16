@@ -450,8 +450,8 @@ background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 10
     width: 19px;
     height: 13px;
     position: absolute;
-    top: -10px;
-    right: -10px;
+    top: -5px;
+    right: -5px;
     flex-shrink: 0;
     border-radius: 6.5px;
     background: #FF7E1B;
@@ -1083,6 +1083,11 @@ background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 10
       height: 56px;
       flex-shrink: 0;
   }
+
+    .cart-count{
+      top: -1px;
+      right: -6px;
+    }
 
     .content{
       padding-left: 0;
