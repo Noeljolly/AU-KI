@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="checkout.css">
+</head>
+<body>
+    
+    <div class="main">
+        <div class="container">
+            <div class="card">
+                <div class="form-container">
+                    <div class="credit-card">
+                       <div class="credit-card-front"> 
+                        <div class="chip">
+                            <img src="images/chip.png" alt="chip">
+                        </div>
+                        <div class="visa">
+                            <img src="images/visa.png" alt="visa">
+                        </div>
+                        <div class="cardnum">
+                            <span class="ctext">#### #### #### ####</span>
+                        </div>
+                        <div class="cholder">
+                            <span class="cardtext">Card holder</span>
+                            <br>
+                            <span class="exptext" id="cardNameDisplay">Default</span>
+                        </div>
+                        <div class="exp">
+                            <span class="cardtext">Expires</span>
+                            <br>
+                            <span class="exptext" id="expmm">MM</span>
+                            <span class="exptext">/</span>
+                            <span class="exptext" id="expyy" >YY</span>
+                        </div> 
+                       </div> 
+                       <div class="credit-card-back">
+                        <div class="magnetic-stripe">
+                        </div>
+                        <div class="cvv-holder">
+                          <span class="cardtext">CVV</span>
+                          <br>
+                         <div class="cvv-input"> 
+                          <span class="cvvinp" id="cvvinp"><span>
+                                </div>        
+                        </div>
+                      </div>                   
+                    </div>
+
+                    <div class="credit-card-form">
+                        <div class="form-row">
+                        <label for="cardNumber">Card Number</label>
+                        <input type="text" id="cardNumber"  maxlength="19" required style="width: 502px; height: 48px;">
+                        
+                        </div>
+                        <div class="form-row">
+                        <label for="cardHolder">Card Holders</label>
+                        <input type="text" id="cardHolder" pattern="[A-Za-z]+"  required style="width: 502px; height: 48px;" oninput="restrictToAlphabets(this)">
+                        </div>
+                        <div class="form-row">
+                        <div class="expiration-date-cvv">
+                            <div class="expiration-date">
+                            <label for="expirationMonth">Expiration Date </label>
+                            <br>
+                            <select id="expirationMonth" required style="width: 150px; height: 48px; margin-right: 15px; color: var(--700, #4A5568);font-family: Inter;font-size: 18px; font-style: normal;font-weight: 500; line-height: normal;">
+                                <option value="" disabled selected>Month</option>
+                                <option value="01">01</option>
+                                <option value="02">02</option>
+                                <option value="03">03</option>
+                                <option value="04">04</option>
+                                <option value="05">05</option>
+                                <option value="06">06</option>
+                                <option value="07">07</option>
+                                <option value="08">08</option>
+                                <option value="09">09</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                            </select>
+                            <select id="expirationYear" required style="width: 150px; height: 48px; color: var(--700, #4A5568);font-family: Inter; font-size: 18px; font-style: normal; font-weight: 500; line-height: normal;"> 
+                                <option value="" disabled selected>Year</option>
+                            </select>
+                            </div>
+                            <div class="cvv">
+                            <label for="cvv">CVV</label>
+                            <br>
+                            <input type="text" id="cvv" maxlength="3" required style="width: 150px; height: 45px;" oninput="restrictToNumbers(this)">
+                            </div>
+                        </div>
+                        </div>
+                        <button type="submit">Submit</button>
+                  </div>                  
+                </div>
+            </div>
+            <div class="order">  
+               <div class="textpos"> 
+                <span class="text1">Order Summary</span>
+               </div>
+               <div class="img"></div>
+               <div class="text2">
+                <span>Fall Limited Edition Sneakers</span>
+                <br>
+                <span class="total">$125.00</span>
+                <div class="number-counter">
+                    <div class="buttons">
+                      <div class="counter-button counter-minus">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <g clip-path="url(#clip0_474_26)">
+                          <path d="M5 11H19V13H5V11Z" fill="#718096"/>
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_474_26">
+                            <rect width="24" height="24" fill="white"/>
+                          </clipPath>
+                        </defs>
+                      </svg>
+                      </div>
+                      <div class="counter-display"></div>
+                      <div class="counter-button counter-plus">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <g clip-path="url(#clip0_474_23)">
+                              <path d="M11 11V5H13V11H19V13H13V19H11V13H5V11H11Z" fill="#718096"/>
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_474_23">
+                                <rect width="24" height="24" fill="white"/>
+                              </clipPath>
+                            </defs>
+                          </svg>
+                      </div>
+                    </div>
+                  </div>
+               </div>
+                <div class="gift">
+                    Gift Card / Discount code
+                </div>
+                <div class="coupon">
+                    <div class="box"></div>
+                    <div class="apply">
+                        <span class="atext">Apply</span>
+                    </div>
+                </div>
+                <div class="sub-total">
+                    <div class="stext">
+                        <span> Sub total</span>
+                    </div>
+                    <div class="svalue">
+                        <span>$125.00</span>
+                    </div>
+                </div>
+                <div class="sub-total">
+                    <div class="taxtext">
+                        <span> Tax</span>
+                    </div>
+                    <div class="taxvalue">
+                        <span>$3.25</span>
+                    </div>
+                </div>
+                <div class="sub-total">
+                    <div class="shiptext">
+                        <span> Shipping</span>
+                    </div>
+                    <div class="free">
+                        <span>Free</span>
+                    </div>
+                </div>
+                <div class="sub-total">
+                    <div class="totalamt">
+                        <span> Total</span>
+                    </div>
+                    <div class="amt">
+                        <span>$128.45</span>
+                    </div>
+                </div>
+
+            </div>   
+        </div>
+    </div>
+      
+</body>
+<script src="checkout.js"></script>
+  
+</html>
